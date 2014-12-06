@@ -23,8 +23,6 @@ require_relative 'worker'
 CONFIG = YAML.load_file(File.join(File.expand_path('../', File.dirname(__FILE__)), 'config/config.yml')).symbolize_keys!
 
 # Github config
-github = Github.new do |config|
+GITHUB = Github.new do |config|
   config.oauth_token = CONFIG[:oauth_token]
 end
-
-Worker.new(RepoJob.initialize(github)).work(CONFIG[:threads_count])
