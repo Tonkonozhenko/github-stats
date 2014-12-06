@@ -1,0 +1,28 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.1.7)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    i18n (0.6.11)
+    json (1.8.1)
+    json (1.8.1-java)
+    minitest (5.4.3)
+    netrc (0.7.9)
+    rest_client (1.8.2)
+      netrc (~> 0.7.7)
+    thread_safe (0.3.4)
+    thread_safe (0.3.4-java)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  activesupport
+  rest_client
